@@ -317,7 +317,9 @@ footer .container ul a li:hover {
 #overlay iframe {
   margin: 1.5rem;
   width: 95vw;
-  aspect-ratio: 16 / 9;
+  height: 95vh;
+  justify-self: center;
+  align-self: center;
 }
 
 #close {
@@ -396,6 +398,7 @@ footer .container ul a li:hover {
 
 #imgbg #exhibit img {
   max-height: 90vh;
+  width: auto;
   max-width: 90vw;
 }
 /*# sourceMappingURL=main.css.map */
