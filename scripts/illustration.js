@@ -7,6 +7,7 @@ let thumbnailsJSON = [
     {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/desconhecido.png" data-img="../assets/gallery/img/desconhecido.png">'},
     {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/easy.png" data-img="../assets/gallery/img/easy.png">'},
     {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/velho.png" data-img="../assets/gallery/img/velho.png">'},
+    {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/negra.png" data-img="../assets/gallery/img/negra.png">'},
 
     ];
 
