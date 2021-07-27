@@ -1,6 +1,6 @@
 :root{
     //--black:#3b3737;
-    --black:#3b3737;
+    --black:#333;
     --white:#f2f2f2;
     --c1:#c0feef;
     --c2:#43ffd2;
@@ -15,6 +15,10 @@
         font-size:12px;
     }
 
+}
+
+*{
+    text-decoration: none;
 }
 
 body{
@@ -93,7 +97,8 @@ img{
 
 h1{
     line-height: 150%;
-    margin:2rem 0;
+    padding-left: 2rem;
+    margin-bottom:3rem;
     font-size: 2.5rem;
     color:var(--c3);
  }
@@ -102,6 +107,10 @@ h1{
     line-height: 150%;
     font-size: 2rem;
     color:black;
+ }
+
+ h4{
+     color:#555;
  }
 
  p{
@@ -169,17 +178,15 @@ nav{
 
 .presentation{
     font-size: 1.5rem;
-    padding:10rem 0;
 
     p{
         width:70%;
-
     }
 }
 
 .quote{
     font-size: 1.5rem;
-    padding:10rem 0;
+    padding:5rem 0;
     
 
     p{
@@ -240,11 +247,37 @@ main {
         }
 
         &:active{
-            background: var(--comp);
+            background: var(--c4);
             color:#fff;
         }
 
     }
+}
+
+.btn2{
+    border:none;
+    font-size: 1.8rem;
+    background: none;
+    color:var(--comp);
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+
+    &:hover{
+        background: none;
+    }
+
+    &:active{
+        background: none;
+        color:#888;
+    }
+}
+
+.black{
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
 }
 
 .display{
@@ -293,9 +326,21 @@ article {
     }
 }
 
+.button-area{
+    padding:4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#card{
+    max-width:300px;
+    margin:2rem auto;
+}
+
 footer{
     background: var(--black);
 
+   
     .container ul{
         list-style: none;
         justify-content: space-evenly;
@@ -380,7 +425,7 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (max-width:600px){
+    @media (max-width:500px){
         grid-template-columns: 1fr;
     }
 }
@@ -425,7 +470,9 @@ footer{
 
 }
 
-
+.no-margin-bottom{
+    margin-bottom: 0;
+}
 
 
 

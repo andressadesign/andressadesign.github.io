@@ -1,5 +1,5 @@
 :root {
-  --black:#3b3737;
+  --black:#333;
   --white:#f2f2f2;
   --c1:#c0feef;
   --c2:#43ffd2;
@@ -14,6 +14,10 @@
   :root {
     font-size: 12px;
   }
+}
+
+* {
+  text-decoration: none;
 }
 
 body {
@@ -88,7 +92,8 @@ img {
 
 h1 {
   line-height: 150%;
-  margin: 2rem 0;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   color: var(--c3);
 }
@@ -97,6 +102,10 @@ h2 {
   line-height: 150%;
   font-size: 2rem;
   color: black;
+}
+
+h4 {
+  color: #555;
 }
 
 p {
@@ -163,7 +172,6 @@ nav ul a li:hover, nav ul a:visited li:hover, nav ul a:active li:hover {
 
 .presentation {
   font-size: 1.5rem;
-  padding: 10rem 0;
 }
 
 .presentation p {
@@ -172,7 +180,7 @@ nav ul a li:hover, nav ul a:visited li:hover, nav ul a:active li:hover {
 
 .quote {
   font-size: 1.5rem;
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .quote p {
@@ -228,8 +236,34 @@ main button:hover {
 }
 
 main button:active {
-  background: var(--comp);
+  background: var(--c4);
   color: #fff;
+}
+
+.btn2 {
+  border: none;
+  font-size: 1.8rem;
+  background: none;
+  color: var(--comp);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+}
+
+.btn2:hover {
+  background: none;
+}
+
+.btn2:active {
+  background: none;
+  color: #888;
+}
+
+.black {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: .5rem;
 }
 
 .display {
@@ -273,6 +307,17 @@ article {
 
 article img {
   cursor: pointer;
+}
+
+.button-area {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#card {
+  max-width: 300px;
+  margin: 2rem auto;
 }
 
 footer {
@@ -361,7 +406,7 @@ footer .container ul a li:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #gallery {
     grid-template-columns: 1fr;
   }
@@ -400,5 +445,9 @@ footer .container ul a li:hover {
   max-height: 90vh;
   width: auto;
   max-width: 90vw;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
