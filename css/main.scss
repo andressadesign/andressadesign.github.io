@@ -1,7 +1,7 @@
 :root{
     //--black:#3b3737;
     --black:#333;
-    --white:#f2f2f2;
+    --white:#fff;
     --c1:#c0feef;
     --c2:#43ffd2;
     --c3:#1edbac;
@@ -12,18 +12,18 @@
     font-family: 'century gothic';
 
     @media (max-width:600px){
-        font-size:12px;
+        font-size:14px;
     }
 
 }
 
 *{
     text-decoration: none;
+   //box-shadow:0 0 1px 1px red;
+   scroll-behavior: smooth;
+   -webkit-scroll-behavior: smooth;
 }
 
-body{
-    position: relative;
-}
 
 *, *::before, *::after{
     margin:0;
@@ -37,8 +37,42 @@ body{
     color:#fff;
 }
 
+::-webkit-scrollbar{
+    behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+
 img{
     width: 100%;
+}
+
+// wellcome animation style
+
+.welcome{
+    position: fixed;
+    z-index:10;
+    inset:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: welcome-animate 1s ease-in-out 1s both;
+
+    .welcome-img{
+        width: 50vmin;
+        aspect-ratio: 1;
+    }
+
+    @keyframes welcome-animate {
+        0% {transform:0;}
+        99%{transform: translateY(-100%);}
+        100%{transform: translateY(-100%); display: none;}
+    }
+
 }
 
 // Useful Styles
@@ -64,12 +98,23 @@ img{
     margin:0 auto;
 }
 
+.all-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-init{
+    margin-left:1rem;
+}
+
 .inflate{
     width:100%;
 }
 
 .icon{
     position:relative;
+    width:5rem;
 }
 
 .active{
@@ -122,9 +167,10 @@ h1{
 nav{
     position:sticky;
     top:0;
-    z-index:100;
+    z-index:5;
     width: 100%;
-    background-color: var(--white);
+    background: #222;
+    color:white;
 
     ul{
         list-style: none;
@@ -153,15 +199,23 @@ nav{
         }
 
         a, a:visited, a:active{
-            color:black;
+            color:white;
             text-decoration: none;
+
+            .initial-logo{
+                height: 50px;
+            }
 
             li{
                 font-size: 1.2rem;
                 padding:1rem 2rem;
                 display:relative;
-
                 cursor:pointer;
+
+                @media (max-width:630px){
+                    padding:1rem;
+                    font-size: 1rem;
+                }
 
                 &:hover{
                     background-color: var(--c3);
@@ -205,10 +259,28 @@ nav{
 
 header{
     width:100%;
-    background: var(--black);
+    min-height:400px;
+}
+
+.header-cards{
+    background: url(../assets/img/cards.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-illustrations{
+    background: url(../assets/img/bg-illustrations.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 15%;
+}
+
+.header-picture{
+      background: var(--black);
+
 
     & .logo{
-        max-width:400px;
+        max-width:300px;
         background-size: cover;
     }
 }
@@ -257,11 +329,10 @@ main {
 .btn2{
     border:none;
     font-size: 1.8rem;
+    font-weight: bold ;
     background: none;
-    color:var(--comp);
+    color:var(--c4);
     cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: .5rem;
 
     &:hover{
         background: none;
@@ -337,8 +408,24 @@ article {
     margin:2rem auto;
 }
 
+.image-center{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin:2rem;
+}
+
+.rounded-small{
+    width:200px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-image: url(../assets/img/andressa.png);
+    background-size: cover;
+    margin-left: 3rem;
+}
+
 footer{
-    background: var(--black);
+    background: var(--white);
 
    
     .container ul{
