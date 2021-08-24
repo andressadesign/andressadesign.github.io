@@ -1,5 +1,8 @@
 let thumbnailsJSON = [
-    
+    {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/baleia.png" data-img="../assets/gallery/img/baleia.png">'},
+    {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/tartaruga.png" data-img="../assets/gallery/img/tartaruga.png">'},
+    {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/gato.png" data-img="../assets/gallery/img/gato.png">'},
+    {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/peixe.png" data-img="../assets/gallery/img/peixe.png">'},
     {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/ice.png" data-img="../assets/gallery/img/ice.png">'},
     {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/despedida.png" data-img="../assets/gallery/img/despedida.png">'},
     {tn:'<img onclick="openIMG(this)" src="../assets/gallery/thumb/terry.png" data-img="../assets/gallery/img/terry.png">'},
