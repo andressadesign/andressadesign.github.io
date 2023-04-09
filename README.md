@@ -1,4 +1,6 @@
 # andressadesign.github.io
 
-website desenvolvido como portfólio pessoal.
+antigo website desenvolvido como portfólio pessoal.
 Ilustrações, Identidades visuais, projetos pessoais.
+
+Novo site: https://andressailustra.art
